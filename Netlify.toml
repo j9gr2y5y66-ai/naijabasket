@@ -1,0 +1,12 @@
+[build]
+  # No build command needed for static HTML
+  command = ""
+  
+  # Serve files from the root directory (where index.html lives)
+  publish = "/"
+
+# Optional: Extra headers for better caching/performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
