@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macro Scanner • NaijaBasket</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+
+    <!-- Navbar -->
+    <nav class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-emerald-600 rounded-2xl flex items-center justify-center">
+                    <i class="fa-solid fa-chart-line text-white"></i>
+                </div>
+                <span class="text-2xl font-semibold tracking-tight">NaijaBasket Macro</span>
+            </div>
+            <a href="index.html" class="px-5 py-2 text-sm hover:text-emerald-400 flex items-center gap-x-2">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Basket
+            </a>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-6 py-8">
+        <h1 class="text-4xl font-semibold tracking-tighter mb-2">Macro Scanner</h1>
+        <p class="text-zinc-400 mb-8">Nigeria Fuel & Food Price Trends • June 2026</p>
+
+        <!-- Quick Macro Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                <div class="text-emerald-400 text-xs">INFLATION (MoM)</div>
+                <div class="text-4xl font-semibold mt-1 text-emerald-400">+2.8%</div>
+                <div class="text-xs text-zinc-500 mt-1">↑ from last month</div>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                <div class="text-emerald-400 text-xs">NAIRA/USD</div>
+                <div class="text-4xl font-semibold mt-1">₦1,680</div>
+                <div class="text-xs text-red-400 mt-1">▼ -15 this week</div>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                <div class="text-emerald-400 text-xs">DIESEL SUPPLY</div>
+                <div class="text-4xl font-semibold mt-1">Low</div>
+                <div class="text-xs text-amber-400 mt-1">Dangote + Imports</div>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                <div class="text-emerald-400 text-xs">FOOD INDEX</div>
+                <div class="text-4xl font-semibold mt-1">+18%</div>
+                <div class="text-xs text-zinc-500 mt-1">YTD</div>
+            </div>
+        </div>
+
+        <!-- Simple Trend Table -->
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+            <h2 class="text-xl font-semibold mb-4">Recent Price Trends</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="border-b border-zinc-700">
+                            <th class="text-left py-3">Item</th>
+                            <th class="text-right py-3">Current</th>
+                            <th class="text-right py-3">Last Week</th>
+                            <th class="text-right py-3">Change</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-zinc-800">
+                        <tr><td class="py-3">Petrol (PMS)</td><td class="text-right">₦980</td><td class="text-right">₦950</td><td class="text-emerald-400 text-right">+3%</td></tr>
+                        <tr><td class="py-3">Diesel (AGO)</td><td class="text-right">₦1,050</td><td class="text-right">₦1,020</td><td class="text-emerald-400 text-right">+3%</td></tr>
+                        <tr><td class="py-3">Cooking Gas</td><td class="text-right">₦1,250</td><td class="text-right">₦1,180</td><td class="text-emerald-400 text-right">+6%</td></tr>
+                        <tr><td class="py-3">Local Rice (1kg)</td><td class="text-right">₦1,920</td><td class="text-right">₦1,850</td><td class="text-emerald-400 text-right">+4%</td></tr>
+                        <tr><td class="py-3">Chicken (1kg)</td><td class="text-right">₦3,500</td><td class="text-right">₦3,400</td><td class="text-emerald-400 text-right">+3%</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="mt-8 text-center text-zinc-500 text-sm">
+            Data as of June 30, 2026 • More advanced charts & alerts coming soon
+        </div>
+    </div>
+</body>
+</html>
